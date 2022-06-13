@@ -34,6 +34,7 @@ export function toFancyPlatform(platform: string) {
   if (platform === 'osx') return 'macos';
   if (platform === 'win32') return 'win';
   if (platform === 'windows') return 'win';
+  if (platform === 'android') return 'linux';
   return platform;
 }
 
@@ -72,7 +73,7 @@ function getHostPlatform() {
 }
 
 function getKnownPlatforms() {
-  return ['alpine', 'freebsd', 'linux', 'linuxstatic', 'macos', 'win'];
+  return ['alpine', 'freebsd', 'linux', 'linuxstatic', 'macos', 'win', 'android'];
 }
 
 export function toFancyArch(arch: string) {
